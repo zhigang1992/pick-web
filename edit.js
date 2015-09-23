@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('.submit-button').on('click', function(){
     var dataToSave = JSON.stringify($edit.val().split('\n'))
     localStorage.setItem("candidates", dataToSave)
-    localStorage.setItem("winners", null)
+    localStorage.setItem("winners", JSON.stringify([]))
      window.location.href = "index.html"
   })
 })

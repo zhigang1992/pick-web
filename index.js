@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('body').on('click', function() {
+
       function getRandomColor() {
           var letters = '0123456789ABCDEF'.split('');
           var color = '#';
@@ -18,11 +19,15 @@ $(document).ready(function() {
 
       var $body = $("body")
       var $label = $(".js-label")
+
+      $body.addClass("disabled")
+
       var timer = window.setInterval(function () {
           $body.css('background-color', getRandomColor())
           $label.html(sample(candidates))
       }, 100);
       setTimeout(function() {
+        $body.removeClass("disabled")
         var winnersDatas = localStorage.getItem("winners")
         var winners = winnersDatas ? JSON.parse(winnersDatas) : []
         var availableCandidates = $(candidates).not(winners).get()

@@ -9,6 +9,10 @@ body.index {
   justify-content: center;
 }
 
+body.disabled {
+  pointer-events: none;
+}
+
 .label {
   font-size: 200px;
 }

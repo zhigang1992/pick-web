@@ -36,6 +36,6 @@ $(document).ready(function() {
         winners.push(newWinner)
         localStorage.setItem("winners", JSON.stringify(winners))
         window.clearTimeout(timer)
-      }, 1500)
+      }, 8000)
     })
 })

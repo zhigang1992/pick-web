@@ -1,0 +1,40 @@
+html, body
+{
+    height: 100%;
+}
+
+body.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-size: 200px;
+}
+
+body.edit {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-box {
+  width: 100%;
+  flex-grow: 9;
+}
+
+.submit-button-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #A4BF82;
+}

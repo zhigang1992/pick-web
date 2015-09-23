@@ -11,7 +11,7 @@ $(document).ready(function() {
       }
 
       function sample(array) {
-        return array.length > 0 ? array[Math.floor(Math.random()*array.length)] : ""
+        return array.length > 0 ? array[Math.floor(Math.random()*array.length)] : "没了，重新<a href='edit.html'>设置</a>"
       }
 
       var savedData = localStorage.getItem("candidates")
